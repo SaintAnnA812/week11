@@ -1,0 +1,85 @@
+* {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.screen {
+    max-width: 1000px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.list__item {
+    display: flex;
+    border: 1px solid black;
+
+}
+
+.list__image {
+    display: flex;
+    max-width: 200px;
+    margin-left: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+.list__img {
+    width: 100%;
+}
+
+
+
+.list__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.list__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.list__menu-text {
+    color: darkgray;
+}
+
+.list__menu-price1,
+.list__menu-price2,
+.list__menu-price3,
+.list__menu-price4,
+.summa {
+    color: blue;
+    font-weight: 900;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.button {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.price-item {
+    display: flex;
+}

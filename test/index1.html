@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>События</h1>
+    <select name="breed" id="breed" onchange="show()">
+        <option disabled selected="selected">Выберите породу</option>
+        <option value="persian">Персидская</option>
+        <option value="seamese">Сиамская</option>
+        <option value="british">Британская</option>
+        <option value="bengal">Бенгальская</option>
+        <option value="nobreed">Дворовая</option>
+    </select><br><br>
+
+    <div id="result">
+        <img src="" id="catImage" width="300">
+    </div>
+
+
+
+
+
+
+    <script>
+        /*function colorMe() {
+            document.getElementById('test')
+                .style.backgroundColor = 'yellow';
+        }
+        function colorMeBack() {
+            document.getElementById('test')
+                .style.backgroundColor = 'white';
+        }*/
+        /*function show() {
+            if (document.getElementById("breed").value == "persian")
+                document.getElementById('catImage').src = "https://klike.net/uploads/posts/2022-06/1654842544_1.jpg";
+            if (document.getElementById("breed").value == "seamese")
+                document.getElementById('catImage').src = "https://klike.net/uploads/posts/2022-06/1654842566_5.jpg";
+}*/
+
+        function show() {
+            switch (document.getElementById("breed").value) {
+                case 'persian': document.getElementById('catImage').src = "https://klike.net/uploads/posts/2022-06/1654842544_1.jpg"; break;
+
+                case 'seamese': document.getElementById('catImage').src = "https://klike.net/uploads/posts/2022-06/1654842566_5.jpg"; break;
+            }
+        }
+    </script>
+
+
+
+    <!--
+    <input type="text" id="test" onkeyup="document.getElementById('result')
+.innerText = document.getElementById('test').value" onmouseover="colorMe()" onmouseout="colorMeBack()">
+
+    <button onСlick="check()">Нажми меня</button>-->
+
+</body>
+
+
+
+</html>

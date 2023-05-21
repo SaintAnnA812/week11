@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input class="number" type="number" value="">
+
+        <input class="empty" value="" disabled="disabled">
+    </form>
+    <button class="button" id="btn">Я возвожу число в квадрат</button>
+
+    <script>
+        let number = document.querySelector('.number');
+        let empty = document.querySelector('.empty');
+        let button = document.querySelector('.button');
+
+
+        button.addEventListener('click', () => {
+            let num = number.value;
+            empty.value = num * num;
+        })
+
+
+
+    </script>
+</body>
+
+</html>
